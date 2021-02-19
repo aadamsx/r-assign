@@ -26,7 +26,7 @@
 	"types": "index.d.ts",
 	"scripts": {
 		"prepublishOnly": "npm test && npm run ts-check",
-		"test": "tap -b test.js",
+		"test": "tap -b test/*.test.js",
 		"test-cov-html": "npm test -- --coverage-report=html",
 		"ts-check": "tsc -p jsconfig.json"
 	},
